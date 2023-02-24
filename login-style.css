@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+:root{
+	--color-primary:#7380ec;
+	--color-danger:#ff7782;
+	--color-success:#41f1b6;
+	--color-warning:#ffbb55;
+	--color-white: #202528;
+	--color-info-dark:#7d8da1;
+	--color-info-light: #dce1eb;
+	--color-dark: #edeffd;
+	--color-light: rgba(0,0,0,0.4);
+	--color-primary-variant:#111e88;
+	--color-dark-variant: #a3bdcc;
+	--color-background:  #181a1e;
+
+	--card-border-radius: 2rem;
+	--border-radius-1: 0.4rem;
+	--border-radius-2: 0.8rem;
+	--border-radius-3: 1.2rem;
+
+	--card-padding: 1.8rem;
+	--padding-1: 1.2rem;
+
+	--box-shadow: 0 2rem 3rem var(--color-light);
+}
+body, html {
+  font-family: poppins, sans-serif;
+  background-color: var(--color-background);
+  padding: 0;
+  margin: 0;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  margin: 0;
+  top: 10rem;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: var(--color-white);
+  border-radius: 9px;
+  border-top: 10px solid #79a6fe;
+  border-bottom: 10px solid #8BD17C;
+  width: 400px;
+  height: 500px;
+  box-shadow: 1px 1px 108.8px 19.2px rgb(25,31,53);
+}
+
+.box h4 {
+    font-family: poppins, sans-serif;
+  color: #5c6bc0; 
+  font-size: 18px;
+  margin-top:94px;;
+}
+
+.box h4 span {
+  color: #dfdeee;
+  font-weight: lighter;
+}
+
+.box h5 {
+    font-family: poppins, sans-serif;
+  font-size: 13px;
+  color: #a1a4ad;
+  letter-spacing: 1.5px;
+  margin-top: -15px;
+  margin-bottom: 70px;
+}
+
+.box input[type = "text"],.box input[type = "password"] {
+  display: block;
+  margin: 20px auto;
+  background: #262e49;
+  border: 0;
+  border-radius: 5px;
+  padding: 14px 10px;
+  width: 320px;
+  outline: none;
+  color: #d6d6d6;
+      -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+  
+}
+::-webkit-input-placeholder {
+  color: #565f79;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus {
+  border: 1px solid #79A6FE;
+  
+}
+
+a{
+  color: #5c7fda;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ label input[type = "checkbox"] {
+  display: none; /* hide the default checkbox */
+}
+
+/* style the artificial checkbox */
+
+
+.btn1 {
+  border:0;
+  background: var(--color-primary);
+  color: #dfdeee;
+  border-radius: 100px;
+  width: 340px;
+  height: 49px;
+  font-size: 16px;
+  top: 79%;
+  left: 8%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background: var(--color-primary-variant);
+}
+
+.rmb {
+  position: absolute;
+  margin-left: -24%;
+  margin-top: 0px;
+  color: #dfdeee;
+  font-size: 13px;
+}
+
+.forgetpass {
+  justify-content: center;
+  right: 28px;
+}
+
+.dnthave{
+    justify-content: center;
+    margin-top:4rem;
+}
+
+[type=checkbox]:checked + span:before {/* <-- style its checked state */
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    content: "\f00c";
+    position: absolute;
+    top: -4px;
+    color: #896cec;
+    left: -1px;
+    width: 13px;
+}
+
+.typcn {
+  position: absolute;
+  left: 339px;
+  top: 282px;
+  color: #3b476b;
+  font-size: 22px;
+  cursor: pointer;
+}      
+
+.typcn.active {
+  color: #7f60eb;
+}
+
+.error {
+  background:var(--color-danger);
+  text-align: center;
+  width: 337px;
+  height: 20px;
+  padding: 2px;
+  border: 0;
+  border-radius: 5px;
+  margin: 10px auto 10px;
+  position: absolute;
+  top: 31%;
+  left: 7.2%;
+  color: white;
+  display: none;
+}

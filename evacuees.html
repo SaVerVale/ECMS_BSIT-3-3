@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+      rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class ="logo">
+                    <img src="assets/logo.png">
+                    <h2>ECMS</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class ="sidebar">
+                <a href="index.html" class="btn-dashboard">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="center.html" class = "btn-center">
+                    <span class="material-icons-sharp">apartment</span>
+                    <h3>Center</h3>
+                </a>
+                <a href="#" class="btn-evacuees active">
+                    <span class="material-icons-sharp">group</span>
+                    <h3>Evacuees</h3>
+                </a>
+                <a href="inventory.html" class="btn-inventory">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Inventory</h3>
+                </a>
+                <a href="#" class="btn-settings">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a>
+
+                <a href="#" class="btn-logout">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!===================== END OF ASIDE =======================!>
+
+        <main>
+            <h1>Evacuee Manager</h1>
+            
+            <div class="recent-updates">
+                <h2>Evacuee Information</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Age</th>
+                            <th>Sex</th>
+                            <th>Room</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Samson, Anne Marie</td>
+                            <td>San Roque</td>
+                            <td>23</td>
+                            <td>Female</td>
+                            <td>Room 16</td>
+                            <td>Evacuated</td>
+                        </tr>
+                        <tr>
+                            <td>Lee, John Mike</td>
+                            <td>Village East</td>
+                            <td>27</td>
+                            <td>Male</td>
+                            <td>Room 10</td>
+                            <td>Evacuated</td>
+                        </tr>
+                        <tr>
+                            <td>Collins, Adon</td>
+                            <td>San Fidel</td>
+                            <td>17</td>
+                            <td>Male</td>
+                            <td>Room 7</td>
+                            <td>Departed</td>
+                        </tr>
+                        <tr>
+                            <td>Santos, Desirie</td>
+                            <td>Santolan</td>
+                            <td>37</td>
+                            <td>Female</td>
+                            <td>Room 21</td>
+                            <td>Evacuated</td>
+                        </tr>
+                        <tr>
+                            <td>Santiago, Janna</td>
+                            <td>Pinagbuhatan</td>
+                            <td>25</td>
+                            <td>Female</td>
+                            <td>Room 15</td>
+                            <td>Evacuated</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+
+            <div class="recent-updates">
+                <h2>Household Database</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Household ID</th>
+                            <th>Number of Members</th>
+                            <th>Address</th>
+                            <th>Family Head</th>
+                            <th>Room</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HH_1123</td>
+                            <td>12</td>
+                            <td>San Tadeo</td>
+                            <td>Santiago, Jose</td>
+                            <td>Room 16</td>
+                            <td>01/02/2022</td>
+                        </tr>
+                        <tr>
+                            <td>HH_1123</td>
+                            <td>12</td>
+                            <td>San Tadeo</td>
+                            <td>Santiago, Jose</td>
+                            <td>Room 16</td>
+                            <td>01/02/2022</td>
+                        </tr>
+                        <tr>
+                            <td>HH_1123</td>
+                            <td>12</td>
+                            <td>San Tadeo</td>
+                            <td>Santiago, Jose</td>
+                            <td>Room 16</td>
+                            <td>01/02/2022</td>
+                        </tr>
+                        <tr>
+                            <td>HH_1123</td>
+                            <td>12</td>
+                            <td>San Tadeo</td>
+                            <td>Santiago, Jose</td>
+                            <td>Room 16</td>
+                            <td>01/02/2022</td>
+                        </tr>
+                        <tr>
+                            <td>HH_1123</td>
+                            <td>12</td>
+                            <td>San Tadeo</td>
+                            <td>Santiago, Jose</td>
+                            <td>Room 16</td>
+                            <td>01/02/2022</td>
+                        </tr>
+                        
+
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <!  ------------------- END OF MAIN -----------------------  !>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class= "material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class= "material-icons-sharp active">light_mode</span>
+                    <span class= "material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Daniel</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="assets/profile-1.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <! ---------------- End of Top ---------------- !>
+            <div class="recent-announcements">
+                <h2>Add Evacuees</h2>
+                <div class="announcements">
+                    <div class="add-evacuees-form">
+                            <div class="firstname">
+                            <input type="text" name="name" class="text-box" placeholder="First Name">
+                            <h3 class="text-muted">First Name</h3>
+                            </div>
+    
+                            <div class="middlename">
+                            <input type="text" name="name" class="text-box" placeholder="Middle Name">
+                            <h3 class="text-muted">Middle Name</h3>
+                            </div>
+    
+                            <div class="lastname">
+                            <input type="text" name="name" class="text-box" placeholder="Last Name">
+                            <h3 class="text-muted">Last Name</h3>
+                            </div>
+
+                        <div class="add-evacuees-row">
+                            <div>
+                            <input type="number" name="age" class="text-box" placeholder="Age">
+                            <h3 class="text-muted">Age</h3>
+                            </div>
+                            
+                            <div>
+                            <input type="text" name="sex" class="text-box" placeholder="Sex">
+                            <h3 class="text-muted">Sex</h3>
+                            </div>
+                        </div>
+                            <div>
+                                <input type="date" name="birthday" class="text-box">
+                                <h3 class="text-muted">Birthday</h3>
+                            </div>
+
+                            <div>
+                            <input type="text" name="contact" class="text-box" placeholder="Contact">
+                            <h3 class="text-muted">Contact No</h3>
+                            </div>
+                        
+                        <div class="add-evacuees-row-3">
+                            <div class="txt-address">
+                            <input type="text" name="address" class="text-box" placeholder="Address">
+                            <h3 class="text-muted">Address</h3>
+                            </div>
+                            <div class="household-field">
+                            <datalist id="suggestions" >
+                                <option>Santiago, Jose</option>
+                                <option>Cristo, Jay</option>
+                                <option>Cruz, Samson</option>
+                                <option>Jolo, Joseph</option>
+                                <option>Tan, Gene</option>
+                            </datalist>
+                            <input  autoComplete="on" list="suggestions" class="txt-household"/> 
+                            <h3 class="text-muted">Household</h3>
+                            </div>
+                            <button>Submit</button>
+                            <button>Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <! ------------------ End of Add Evacuees ---------------- !>
+            <div class="recent-announcements">
+                <h2>Add Household</h2>
+                <div class="announcements">
+                    <div class="add-evacuees-form">
+                            <div class="roomid">
+                            <input type="text" name="name" class="text-box" placeholder="Room ID">
+                            <h3 class="text-muted">Room ID</h3>
+                            </div>
+
+                        <div class="add-evacuees-row-2">
+                            <div class="household-head-field"> 
+                            <input type="text" name="name" class="text-box" placeholder="Family Head">
+                            </div>
+                            <button data-modal-target="#modal-create-head">Create</button>
+                        </div>
+                        <button>Submit</button>
+                        <button>Clear</button>
+                    </div>
+                    
+                </div> 
+                <div class="modal" id="modal-create-head">
+                    <div class="modal-header">
+                        
+                      <div class="title"><span class= "material-icons-sharp">person_add</span>
+                        <h2>Create Head</h2>
+                        <h3 class="text-muted" id="room-id-edit"> </h3>
+                    </div>
+                      <button data-close-button class="close-button"><span class="material-icons-sharp">close</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body-input">
+                            <input type="text" name="name" class="text-box" placeholder="First Name">
+                            <h3 class="text-muted">First Name</h3>
+
+                            <input type="text" name="name" class="text-box" placeholder="Middle Name">
+                            <h3 class="text-muted">Middle Name</h3>
+
+                            <input type="text" name="name" class="text-box" placeholder="Last Name">
+                            <h3 class="text-muted">Last Name</h3>
+
+                            <input type="number" name="age" class="text-box" placeholder="Age">
+                            <h3 class="text-muted">Age</h3>
+
+                            <input type="text" name="sex" class="text-box" placeholder="Sex">
+                            <h3 class="text-muted">Sex</h3>
+
+                            <input type="date" name="birthday" class="text-box">
+                            <h3 class="text-muted">Birthday</h3>
+
+                            <input type="text" name="contact" class="text-box" placeholder="Contact">
+                            <h3 class="text-muted">Contact No</h3>
+
+                            <input type="text" name="address" class="text-box" placeholder="Address">
+                            <h3 class="text-muted">Address</h3>
+
+                            <div class="modal-buttons">
+                                <button class="submit">Submit</button>
+                                <button class="cancel">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <div id="overlay"></div>
+                </div>   
+            </div>
+        </div>
+    
+        <! -------------------------END OF HTML----------------------- !>
+    <script>
+    const sideMenu = document.querySelector("aside");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closeBtn = document.querySelector("#close-btn");
+    const themeToggler = document.querySelector(".theme-toggler");
+
+
+    // open sidebar
+    menuBtn.addEventListener('click', () =>{
+        sideMenu.style.display = 'block';
+    })
+
+    // close sidebar
+    closeBtn.addEventListener('click', () =>{
+        sideMenu.style.display = 'none';
+    })
+
+    // change theme
+    themeToggler.addEventListener('click', () =>{
+        document.body.classList.toggle('dark-theme-variables');
+
+        themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
+        themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
+    })
+
+    //POP UP EDIT EVAC INFO FORM
+    var body = document.getElementsByTagName('body')[0];
+
+    const openModalButtons = document.querySelectorAll('[data-modal-target]');
+    const closeModalButtons = document.querySelectorAll('[data-close-button]');
+    const overlay = document.getElementById('overlay');
+
+    openModalButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = document.querySelector(button.dataset.modalTarget);
+        openModal(modal);
+      });
+    });
+
+    overlay.addEventListener('click', () => {
+      const modals = document.querySelectorAll('.modal.active');
+      modals.forEach(modal => {
+        closeModal(modal);
+      });
+    });
+
+    closeModalButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        closeModal(modal);
+      });
+    });
+
+    function openModal(modal) {
+      if (modal == null) return
+      modal.classList.add('active');
+      overlay.classList.add('active');
+    }
+
+    function closeModal(modal) {
+      if (modal == null) return
+      modal.classList.remove('active');
+      overlay.classList.remove('active');
+    }
+
+
+</script>
+</body>
+</html>

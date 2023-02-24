@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+      rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class ="logo">
+                    <img src="assets/logo.png">
+                    <h2>ECMS</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class ="sidebar">
+                <a href="index.html" class="btn-dashboard">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="center.html" class = "btn-center">
+                    <span class="material-icons-sharp">apartment</span>
+                    <h3>Center</h3>
+                </a>
+                <a href="evacuees.html" class="btn-evacuees">
+                    <span class="material-icons-sharp">group</span>
+                    <h3>Evacuees</h3>
+                </a>
+                <a href="volunteers.html" class="btn-volunteers">
+                    <span class="material-icons-sharp">volunteer_activism</span>
+                    <h3>Volunteers</h3>
+                </a>
+                <a href="inventory.html" class="btn-inventory">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Inventory</h3>
+                </a>
+                <a href="#" class="btn-distribution active">
+                    <span class="material-icons-sharp">local_shipping</span>
+                    <h3>Distribution</h3>
+                </a>
+                <a href="#" class="btn-logout">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!===================== END OF ASIDE =======================!>
+
+        <main>
+            <h1>Relief Distribution Manager</h1>
+            
+
+            <div class="recent-updates">
+                <div class="room-household-header">
+                    <h2>Rooms</h2>
+                    <div class="item-field">
+                        <datalist id="item-suggestions" >
+                            <option>Room 1</option>
+                            <option>Room 2</option>
+                            <option>Room 3</option>
+                            <option>Room 4</option>
+                            <option>Room 5</option>
+                        </datalist>
+                        <input  autoComplete="on" list="item-suggestions" class="txt-item"/> 
+                    </div>
+                    <button>Select</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Household ID</th>
+                            <th>Head</th>
+                            <th>Members</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>HH_1123</td>
+                            <td>Jose Santiago</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>HH_1123</td>
+                            <td>Kris Magno</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>HH_1123</td>
+                            <td>Tiyo Delo</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>HH_1123</td>
+                            <td>Anton Nuevo</td>
+                            <td>6</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+
+            <div class="recent-updates">
+                <h2>Distribution History</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Relief ID</th>
+                            <th>Household ID</th>
+                            <th>Head</th>
+                            <th>Date Given</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RG_1123</td>
+                            <td>HH_1123</td>
+                            <td>Jose Santiago</td>
+                            <td>01/09/2022</td>
+                        </tr>
+                        <tr>
+                            <td>RG_1123</td>
+                            <td>HH_1123</td>
+                            <td>Jose Santiago</td>
+                            <td>01/09/2022</td>
+                        </tr>
+                        <tr>
+                            <td>RG_1123</td>
+                            <td>HH_1123</td>
+                            <td>Jose Santiago</td>
+                            <td>01/09/2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <!  ------------------- END OF MAIN -----------------------  !>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class= "material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class= "material-icons-sharp active">light_mode</span>
+                    <span class= "material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Daniel</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="assets/profile-1.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <! ---------------- End of Top ---------------- !>
+            <div class="recent-announcements">
+                <h2>Relief Goods</h2>
+                <div class="announcements">
+                    
+                        <div class="distribute-form">
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th><input type="checkbox"></th>
+                                            <th>Quantity</th>
+                                            <th>Contents</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>124</td>
+                                            <td>2 Noodles, 3 Sardines, 1 Rice, 4 Nescafe 3n1, 4 Alaska</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>78</td>
+                                            <td>2 Wow Ulam, 2 Sardines, 1 Rice, 4 Nescafe 3n1, 4 Bear Brand</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>132</td>
+                                            <td>3 Corned Beef, 2 Pancit Canton, 1 Rice, 4 Kopiko 3n1, 4 Alaska</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>98</td>
+                                            <td>1 Loaf Bread, 5 Bottled Water, 1 Biscuit</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="distribute-row-2">
+                                <button>Distribute</button>
+                                <button>Clear</button>
+                            </div>
+    
+                        </div>
+                    
+                </div>
+            </div>
+            <! ---------------- End of Announcements ---------------- !>
+        </div>
+    </div>
+
+    
+
+    <script>
+    const sideMenu = document.querySelector("aside");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closeBtn = document.querySelector("#close-btn");
+    const themeToggler = document.querySelector(".theme-toggler");
+
+
+    // open sidebar
+    menuBtn.addEventListener('click', () =>{
+        sideMenu.style.display = 'block';
+    })
+
+    // close sidebar
+    closeBtn.addEventListener('click', () =>{
+        sideMenu.style.display = 'none';
+    })
+
+    // change theme
+    themeToggler.addEventListener('click', () =>{
+        document.body.classList.toggle('dark-theme-variables');
+
+        themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
+        themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
+    })
+
+</script>
+</body>
+</html>

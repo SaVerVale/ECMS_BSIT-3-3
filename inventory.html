@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+      rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class ="logo">
+                    <img src="assets/logo.png">
+                    <h2>ECMS</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class ="sidebar">
+                <a href="index.html" class="btn-dashboard">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="center.html" class = "btn-center">
+                    <span class="material-icons-sharp">apartment</span>
+                    <h3>Center</h3>
+                </a>
+                <a href="evacuees.html" class="btn-evacuees">
+                    <span class="material-icons-sharp">group</span>
+                    <h3>Evacuees</h3>
+                </a>
+                <a href="#" class="btn-inventory active">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Inventory</h3>
+                </a>
+                <a href="#" class="btn-settings">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a>
+
+                <a href="#" class="btn-logout">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!===================== END OF ASIDE =======================!>
+
+        <main>
+            <h1>Inventory Manager</h1>
+
+            <div class="recent-updates">
+                <h2>Item Inventory</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Age</th>
+                            <th>Sex</th>
+                            <th>Room</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Samson, Anne Marie</td>
+                            <td>San Roque</td>
+                            <td>23</td>
+                            <td>Female</td>
+                            <td>Room 16</td>
+                            <td>Evacuated</td>
+                        </tr>
+                        <tr>
+                            <td>Lee, John Mike</td>
+                            <td>Village East</td>
+                            <td>27</td>
+                            <td>Male</td>
+                            <td>Room 10</td>
+                            <td>Evacuated</td> 
+                        </tr>
+                        <tr>
+                            <td>Collins, Adon</td>
+                            <td>San Fidel</td>
+                            <td>17</td>
+                            <td>Male</td>
+                            <td>Room 7</td>
+                            <td>Departed</td>
+                        </tr>
+                        <tr>
+                            <td>Santos, Desirie</td>
+                            <td>Santolan</td>
+                            <td>37</td>
+                            <td>Female</td>
+                            <td>Room 21</td>
+                            <td>Evacuated</td>
+                        </tr>
+                        <tr>
+                            <td>Santiago, Janna</td>
+                            <td>Pinagbuhatan</td>
+                            <td>25</td>
+                            <td>Female</td>
+                            <td>Room 15</td>
+                            <td>Evacuated</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+
+            <div class="recent-updates">
+                <h2>Relief Packs</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Relief ID</th>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Date Packed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RG_1123</td>
+                            <td>Noodles</td>
+                            <td>2</td>
+                            <td>01/02/2022</td>
+                        </tr>
+                        <tr>
+                            <td>RG_1123</td>
+                            <td>Rice</td>
+                            <td>2</td>
+                            <td>01/02/2022</td>
+                        </tr>
+                        <tr>
+                            <td>RG_1123</td>
+                            <td>Sardines</td>
+                            <td>2</td>
+                            <td>01/02/2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <!  ------------------- END OF MAIN -----------------------  !>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class= "material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class= "material-icons-sharp active">light_mode</span>
+                    <span class= "material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Daniel</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="assets/profile-1.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <! ---------------- End of Top ---------------- !>
+            <div class="recent-announcements">
+                <h2>Add Item</h2>
+                <div class="announcements">
+                    
+                        <div class="add-items-form">
+                            <div class="itemname">
+                            <input type="text" name="name" class="text-box" placeholder="Item">
+                            <h3 class="text-muted">Item Name</h3>
+                            </div>
+                            <div class="expiry">
+                                <input type="date" name="expiry" class="text-box">
+                                <h3 class="text-muted">Expiry</h3>
+                            </div>
+                            <div class="itemqty">
+                                <input type="number" name="quantity" class="text-box" placeholder="Room ID">
+                                <h3 class="text-muted">Quantity</h3>
+                            </div>
+
+                            <div class="add-items-row-3">
+                                <button>Submit</button>
+                                <button>Clear</button>
+                            </div>
+    
+                        </div>
+                    
+                </div>
+            </div>
+            <! ---------------- End of Announcements ---------------- !>
+            <div class="recent-announcements">
+                <h2>Relief Packing</h2>
+                <div class="announcements">
+                    
+                        <div class="relief-packing-form">
+                           
+                            <div class="relief-item-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Quantity</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Noodles</td>
+                                        <td>2</td>
+                                        <td><button>Remove</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Corned Beef</td>
+                                        <td>2</td>
+                                        <td><button>Remove</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rice</td>
+                                        <td>2</td>
+                                        <td><button>Remove</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nescafe 3n1</td>
+                                        <td>2</td>
+                                        <td><button>Remove</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alaska</td>
+                                        <td>2</td>
+                                        <td><button>Remove</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                            <div class="relief-packing-row-1">
+                                    <div class="item-field">
+                                        <datalist id="item-suggestions" >
+                                            <option>Noodles</option>
+                                            <option>Corned Beef</option>
+                                            <option>Sardines</option>
+                                            <option>Meat Loaf</option>
+                                            <option>Rice</option>
+                                        </datalist>
+                                        <input  autoComplete="on" list="item-suggestions" class="txt-item"/> 
+                                        <h3 class="text-muted">Item</h3>
+                                    </div>
+                                    <div class="itemqty">
+                                        <input type="number" name="quantity" class="text-box" >
+                                        <h3 class="text-muted">Quantity</h3>
+                                    </div>
+                                    <button>Add</button>             
+                            </div>
+                            <div class="relief-packing-last-row">
+                                <div class="relief-multiplier">
+                                    <input type="number" name="multiplier" class="text-box" >
+                                    <h3 class="text-muted">Multiplier</h3>
+                                </div>
+                                <button>Submit</button>
+                                <button>Clear</button>
+                            </div>
+                </div>
+            </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+    
+
+    <script>
+    const sideMenu = document.querySelector("aside");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closeBtn = document.querySelector("#close-btn");
+    const themeToggler = document.querySelector(".theme-toggler");
+
+
+    // open sidebar
+    menuBtn.addEventListener('click', () =>{
+        sideMenu.style.display = 'block';
+    })
+
+    // close sidebar
+    closeBtn.addEventListener('click', () =>{
+        sideMenu.style.display = 'none';
+    })
+
+    // change theme
+    themeToggler.addEventListener('click', () =>{
+        document.body.classList.toggle('dark-theme-variables');
+
+        themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
+        themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
+    })
+
+</script>
+</body>
+</html>

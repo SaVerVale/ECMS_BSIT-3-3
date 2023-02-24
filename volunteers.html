@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+      rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class ="logo">
+                    <img src="assets/logo.png">
+                    <h2>ECMS</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class ="sidebar">
+                <a href="index.html" class="btn-dashboard">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="center.html" class = "btn-center">
+                    <span class="material-icons-sharp">apartment</span>
+                    <h3>Center</h3>
+                </a>
+                <a href="evacuees.html" class="btn-evacuees">
+                    <span class="material-icons-sharp">group</span>
+                    <h3>Evacuees</h3>
+                </a>
+                <a href="#" class="btn-volunteers active">
+                    <span class="material-icons-sharp">volunteer_activism</span>
+                    <h3>Volunteers</h3>
+                </a>
+                <a href="inventory.html" class="btn-inventory">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Inventory</h3>
+                </a>
+                <a href="distribution.html" class="btn-distribution">
+                    <span class="material-icons-sharp">local_shipping</span>
+                    <h3>Distribution</h3>
+                </a>
+                <a href="#" class="btn-logout">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            
+            </div>
+        </aside>
+        <!===================== END OF ASIDE =======================!>
+
+        <main>
+            <h1>Volunteer Manager</h1>
+
+            <div class="recent-updates">
+                <h2>Volunteers</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Birthday</th>
+                            <th>Age</th>
+                            <th>Sex</th>
+                            <th>Group</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>V_1123</td>
+                            <td>Samson, Anne Marie</td>
+                            <td>02/06/2000</td>
+                            <td>23</td>
+                            <td>Female</td>
+                            <td>Medical Group 1</td>
+                            <td><button>Edit</button><button>Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>V_1123</td>
+                            <td>Samson, Anne Marie</td>
+                            <td>02/06/2000</td>
+                            <td>23</td>
+                            <td>Female</td>
+                            <td>Medical Group 1</td>
+                            <td><button>Edit</button><button>Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>V_1123</td>
+                            <td>Samson, Anne Marie</td>
+                            <td>02/06/2000</td>
+                            <td>23</td>
+                            <td>Female</td>
+                            <td>Medical Group 1</td>
+                            <td><button>Edit</button><button>Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>V_1123</td>
+                            <td>Samson, Anne Marie</td>
+                            <td>02/06/2000</td>
+                            <td>23</td>
+                            <td>Female</td>
+                            <td>Medical Group 1</td>
+                            <td><button>Edit</button><button>Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>V_1123</td>
+                            <td>Samson, Anne Marie</td>
+                            <td>02/06/2000</td>
+                            <td>23</td>
+                            <td>Female</td>
+                            <td>Medical Group 1</td>
+                            <td><button>Edit</button><button>Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+
+            <div class="recent-updates">
+                <h2>Volunteer Groups</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Group ID</th>
+                            <th>Group Name</th>
+                            <th>Area</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>VG_1123</td>
+                            <td>Med Group 1</td>
+                            <td>Medical Area 1</td>
+                            <td><button>Edit</button><button>Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>VG_1123</td>
+                            <td>Evac Group 2</td>
+                            <td>Evacuation Area 1</td>
+                            <td><button>Edit</button><button>Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>VG_1123</td>
+                            <td>Rel Ops Group 3</td>
+                            <td>Relief Operations Area 1</td>
+                            <td><button>Edit</button><button>Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <!  ------------------- END OF MAIN -----------------------  !>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class= "material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class= "material-icons-sharp active">light_mode</span>
+                    <span class= "material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Daniel</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="assets/profile-1.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <! ---------------- End of Top ---------------- !>
+            <div class="recent-announcements">
+                <h2>Add Volunteer</h2>
+                <div class="announcements">
+                    
+                        <div class="add-items-form">
+                            <div class="itemname">
+                            <input type="text" name="name" class="text-box" placeholder="Name">
+                            <h3 class="text-muted">Name</h3>
+                            </div>
+                            <div class="expiry">
+                                <input type="date" name="birthday" class="text-box">
+                                <h3 class="text-muted">Birthday</h3>
+                            </div>
+                            <div class="itemqty">
+                                <input type="number" name="age" class="text-box" placeholder="Age">
+                                <h3 class="text-muted">Age</h3>
+                            </div>
+                            <div class="itemname">
+                                <input type="text" name="sex" class="text-box" placeholder="Sex">
+                                <h3 class="text-muted">Sex</h3>
+                                </div>
+                            
+                                <div class="item-field">
+                                    <datalist id="item-suggestions" >
+                                        <option>Medical Group 1</option>
+                                        <option>Evacuation Group 1</option>
+                                        <option>Relief Operations Group 1</option>
+                                    </datalist>
+                                    <input  autoComplete="on" list="item-suggestions" class="txt-item"/> 
+                                    <h3 class="text-muted">Volunteer Group</h3>
+                                </div>
+                            <div class="add-items-row-3">
+                                <button>Submit</button>
+                                <button>Clear</button>
+                            </div>
+    
+                        </div>
+                    
+                </div>
+            </div>
+            <! ---------------- End of Announcements ---------------- !>
+            <div class="recent-announcements">
+                <h2>Add Group</h2>
+                <div class="announcements">
+                    
+                        <div class="relief-packing-form">
+
+                                <div class="item-field">
+                                    <datalist id="item-suggestions" >
+                                        <option>Medical Area 1</option>
+                                        <option>Evacuation Area 1</option>
+                                        <option>Relief Operation 1</option>
+                                    </datalist>
+                                    <input  autoComplete="on" list="item-suggestions" class="txt-item"/> 
+                                    <h3 class="text-muted">Area</h3>
+                                </div>
+
+                                <div class="itemqty">
+                                <input type="text" name="name" class="text-box" >
+                                <h3 class="text-muted">Group Name</h3>
+                                </div>
+
+                            <button>Submit</button>
+                            <button>Clear</button>
+
+                </div>
+            </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+    
+
+    <script>
+    const sideMenu = document.querySelector("aside");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closeBtn = document.querySelector("#close-btn");
+    const themeToggler = document.querySelector(".theme-toggler");
+
+
+    // open sidebar
+    menuBtn.addEventListener('click', () =>{
+        sideMenu.style.display = 'block';
+    })
+
+    // close sidebar
+    closeBtn.addEventListener('click', () =>{
+        sideMenu.style.display = 'none';
+    })
+
+    // change theme
+    themeToggler.addEventListener('click', () =>{
+        document.body.classList.toggle('dark-theme-variables');
+
+        themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
+        themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
+    })
+
+</script>
+</body>
+</html>
